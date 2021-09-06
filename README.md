@@ -34,3 +34,14 @@
     * Install FastAPI
         * `pip install fastapi`
         * `pip install uvicorn[standard]`
+    * Run FastAPI
+        `uvicorn main:app --reload`
+
+* Hello World FastAPI
+    * GET
+        * create route and return `Hello World`
+        * create route for ice_cream and request 'id' for parameter
+
+    * Introduce Redoc and Docs (Swagger UI)
+    * Introduce BaseModel
+    * create PUT ice_cream and adapt BaseModel
