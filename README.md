@@ -3,6 +3,10 @@
 ## Ref: [FastAPI](https://fastapi.tiangolo.com/)
 ![alt text](https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png "Logo")
 
+[How to Write Beautiful Python Code With PEP 8](https://realpython.com/python-pep8/#why-we-need-pep-8)
+
+[FastAPI First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/)
+
 ## Editor and Tools
 * [Python interpreter](https://www.python.org/downloads/)
 * [Video: install python on windows 10](https://www.youtube.com/watch?v=UvcQlPZ8ecA)
