@@ -62,3 +62,27 @@
   - Introduce BaseModel
   - create PUT ice_cream and adapt BaseModel
   - Create fully RESTFul Operation (HTTP Methods)
+
+- Router
+
+  - setup file structure
+  - import APIRouter
+  - config APIRouter
+  - create ice_creams router
+  - create users router
+
+- Tortoise Orm
+
+  - [Doc](https://tortoise-orm.readthedocs.io/en/latest/#introduction)
+  - [install tortoise-orm](https://tortoise-orm.readthedocs.io/en/latest/getting_started.html#installation)
+  - Introduct tortoise-orm
+  - install tortoise-orm
+    `pip install tortoise-orm`
+  - config
+  - connect to SQLite
+
+- CORS
+  - [Doc](https://fastapi.tiangolo.com/tutorial/cors/)
+  - what's CORS
+  - import cors to project
+  - implement to project
