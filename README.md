@@ -17,6 +17,7 @@
 - [VSCode](https://code.visualstudio.com/)
 - [Video: How to install VScode](https://www.youtube.com/watch?v=ApMDPi06DGM&list=PLoTScYm9O0GEo8pnhJb-m-MGVGDvGb4bB&index=2)
 - [Post-man](https://www.postman.com/downloads/)
+- [DB Browser](https://sqlitebrowser.org/)
 
 ## Extension ส่วนเสริม สำหรับ VS Code
 
