@@ -85,4 +85,5 @@
   - [Doc](https://fastapi.tiangolo.com/tutorial/cors/)
   - what's CORS
   - import cors to project
-  - implement to project
+  - # implement to project
+    > > > > > > > b069e1a (add: router config and structure)
