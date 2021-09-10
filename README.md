@@ -62,3 +62,10 @@
   - Introduce BaseModel
   - create PUT ice_cream and adapt BaseModel
   - Create fully RESTFul Operation (HTTP Methods)
+
+- Router
+  - setup file structure
+  - import APIRouter
+  - config APIRouter
+  - create ice_creams router
+  - create users router
