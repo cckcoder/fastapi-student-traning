@@ -1,4 +1,4 @@
-# Welcom to FastAPI course.
+# Welcome to FastAPI course.
 
 ## Ref: [FastAPI](https://fastapi.tiangolo.com/)
 
