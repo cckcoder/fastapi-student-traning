@@ -10,12 +10,6 @@ from fastapi import APIRouter, HTTPException, Depends
 
 router = APIRouter(prefix="/ice_cream", tags=["ice_cream"])
 
-ice_creams_db = [
-    {"id": 1, "flavor": "Vanilla", "price": 59, "is_active": True},
-    {"id": 2, "flavor": "Chocolate", "price": 59, "is_active": True},
-    {"id": 3, "flavor": "Mint Chocolate Chip", "price": 69, "is_active": True},
-]
-
 
 @router.get("/")
 async def get_all_ice_cream(username: str = Depends(get_current_username)):
@@ -25,8 +19,7 @@ async def get_all_ice_cream(username: str = Depends(get_current_username)):
 
 @router.get("/{id}")
 async def read_ice_cream(id: int, q: Optional[str] = None):
-    ice_cream = ice_creams_db[id - 1]
-    return ice_cream
+    return await IceCreamPydantic.from_queryset_single(IceCream.get(id=id))
 
 
 @router.post("/", response_model=IceCreamPydantic)
