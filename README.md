@@ -83,7 +83,10 @@
   - connect to SQLite
 
 - CORS
+
   - [Doc](https://fastapi.tiangolo.com/tutorial/cors/)
   - what's CORS
   - import cors to project
-  - implement to project
+
+- Basic Auth
+  - [Doc](https://fastapi.tiangolo.com/advanced/security/http-basic-auth/)
