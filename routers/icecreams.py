@@ -31,8 +31,8 @@ async def read_ice_cream(id: int, q: Optional[str] = None):
 
 @router.post("/", response_model=IceCreamPydantic)
 async def create_ice_cream(ice_cream: IceCreamPydanticIn):
-    ice_cream = await IceCream.create(**ice_cream.dict(exclude_unset=True))
-    return await IceCreamPydantic.from_tortoise_orm(ice_cream)
+    ice_cream_obj = await IceCream.create(**ice_cream.dict(exclude_unset=True))
+    return await IceCreamPydantic.from_tortoise_orm(ice_cream_obj)
 
 
 @router.put("/{id}")
