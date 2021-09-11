@@ -1,7 +1,8 @@
 from models.ice_cream_model import IceCreamPydantic, IceCreamPydanticIn, IceCream
+from auth.basic_auth import get_current_username
 
 from typing import Optional
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 
 
 router = APIRouter(prefix="/ice_cream", tags=["ice_cream"])
@@ -14,7 +15,8 @@ ice_creams_db = [
 
 
 @router.get("/")
-async def get_all_ice_cream():
+async def get_all_ice_cream(username: str = Depends(get_current_username)):
+    __import__("pprint").pprint(username)
     return await IceCreamPydantic.from_queryset(IceCream.all().order_by("-id"))
 
 
