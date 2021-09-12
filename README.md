@@ -89,4 +89,9 @@
   - import cors to project
 
 - Basic Auth
+
   - [Doc](https://fastapi.tiangolo.com/advanced/security/http-basic-auth/)
+
+- Upload image to FastAPI
+  - [Doc](https://fastapi.tiangolo.com/tutorial/request-files/)
+  - install multipart `pip install python-multipart`
