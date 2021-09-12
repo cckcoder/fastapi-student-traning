@@ -1,10 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from routers import icecreams
 from tortoise.contrib.fastapi import register_tortoise
 
 app = FastAPI()
+app.mount('/static', StaticFiles(directory="static"), name="static")
 
 origins = [
     "*",
